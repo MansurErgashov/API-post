@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+
+    <div class="row p-4 ps-5">
+        <div class="col-4"> 
+            <h2>Users: <span class="user-count"></span></h2>
+            <ul class="user__list list-unstyled">
+               
+            </ul>
+        </div>
+
+        <div class="col-4">
+            <h2>Posts: <span class="posts__count"></span></h2>
+            <ul class="list-unstyled post_list">
+                <!-- <li class="card ps-3 bg-info" style="width: 80%;">
+                    <p class="fs-4 m-0">1</p>
+                    <h4 class="text-danger text-uppercase">title</h4>
+                    <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="col-4">
+            <h2>Comments: <span class="comments__count"></span></h2>
+            <ul class="list-unstyled comment_list">
+                <!-- <li class="card ps-3 bg-secondary" style="width: 80%;">
+                     <p class="fs-4 m-0">1</p> 
+                    <h4 class="text-dark text-uppercase">title</h4>
+                    <a class="text-decoration-none" href="#">falonchiyev@gmail.com</a>
+                    <p class="text-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!--Users-->
+    <template class="user__template">
+        <li class="user__item btn bg-success m-1 ps-2 user__item" style="width: 80%;">
+            <a href="#" class="user__link text-decoration-none text-uppercase text-light">fgshdgfas</a>
+        </li>
+    </template>
+
+    <!--Posts-->
+    <template class="post__template">
+        <li class="card px-3 bg-info my-1 posts__item" style="width: 80%;">
+            <p class="fs-4 m-0 post__id">1</p>
+            <h4 class="text-uppercase">
+                <a class="post__title text-danger text-decoration-none" href="#">title</a>
+            </h4>
+            <p class="text-light post__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+    </template>
+
+    <!-- Comments -->
+    <template class="commnets__template">
+        <li class="card ps-3 bg-secondary comments__item my-1 px-1" style="width: 80%;">
+            <p class="fs-4 m-0 commits__id">1</p>
+            <h4 class="text-dark text-uppercase commits__title">title</h4>
+            <a class="text-decoration-none commits__email" href="#">falonchiyev@gmail.com</a>
+            <p class="text-warning commits__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+    </template>
+    
+    <script src="js/main.js"></script>
+</body>
